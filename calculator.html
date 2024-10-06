@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function calculate(a,x,b){
+                switch(x){
+                    case '+':{
+                        alert(a+" "+" + "+b+" = "+(a+b));
+                        break;
+                    }
+                    case '-':{
+                        alert(a+" "+" - "+b+" = "+(a-b));
+                        break;
+                    }
+                    case '*':{
+                        alert(a+" "+" * "+b+" = "+(a*b));
+                        break;
+                    }
+                    case '/':{
+                        alert(a+" "+" / "+b+" = "+(a/b));
+                        break;
+                    }
+                    default:{
+                        alert("Invalid Calculation.");
+                        break;
+                    }
+                }
+            }
+            let a=parseFloat(prompt("Enter Calulation: "));
+            let x=prompt("Enter Calculation: ");
+            let b=parseFloat(prompt("Enter Calculation: "));
+            calculate(a,x,b);
+        </script>
+    </body>
+</html>
